@@ -1,0 +1,52 @@
+Settings:
+    ✅ API key in settings
+    ✅ Refactor settings from cookies to storage.sync
+    ✅ Dim wallpaper in settings
+    ✅ Divide settings into groups (weather, search, links, wallpaper, etc)
+    ❌ Add dark/light theme functionality
+    ✅ Radio button switch between background color or image
+    ✅ COMPLETELY REFACTOR Settings as an options_ui
+        https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/options_ui
+        https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Options_pages
+        ✅ Buttons to reorganize links up and down
+        ✅ Enable/disable options button on main page (enabled by default)
+        ✅ Maximum number of links
+        ✅ Add event listener of main page for storage change to call loadContent
+
+More weather functionality
+    ❌ Humidity
+    ❌ Pressure
+    ❌ Forecast
+    ✅ Icons
+    ❌ Refactor weather to use geocoding https://openweathermap.org/api/geocoding-api
+    ❌ Add notice to input owm data on settings icon that can be dismissed or goes away when data is input
+
+Widgets: 
+    ✅ Clock
+    ❌ Calculator
+    ❌ Custom links with context menu to edit
+        ✅ https://itnext.io/how-to-create-a-custom-right-click-menu-with-javascript-9c368bb58724
+        ✅ Disable link deletion when only one link remains
+        ❌ Sort by dragging
+        ✅ Create custom prompt for name and destination
+        ✅ Add link insertion functionality
+    ✅ Automatically assign link icons with <img height="16" width="16" src='http://www.google.com/s2/favicons?domain=www.google.com' />
+    ❌ Draggable widgets
+
+Search:
+    ✅ Implement icon functionality
+
+CSS:
+    ✅ Improve search CSS
+    ❌ Improve weather CSS
+    ❌ Improve settings CSS
+    ❌ Improve links CSS
+
+Bugs:
+    ❌ Center div jumps on first load
+
+Links:
+    ❌ Implement double click on link to rename (replace text with input)
+    ✅ Save links on change as an object to store in browser.storage.sync
+    ✅ Load links on pageload from browser.storage.sync
+    ✅ Refactor context menu normalization to display prompt to left

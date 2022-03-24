@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Verso Options</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="icon" href="res/img/icons/favicon.ico">
+  <link rel='stylesheet' type='text/css' media='screen' href='res/css/options.css'>
+</head>
+
+<body>
+  <div id="column">
+    <h1><img src="res/img/icons/icon.png">erso</h1>
+    <h3>by <a href="https://github.com/derekolsen" target="_blank">@derekolsen</a></h3>
+    <hr>
+    <button id="reset">Reset all defaults</button>
+  </div>
+  <main>
+    <h2 id="background">Background</h2>
+    <div class="settings">
+      <input type="radio" id="radio_wallpaper" name="background" autocomplete="off">
+      <label for="radio_wallpaper">Wallpaper:</label>
+      <input type="text" class="setting" id="text_wallpaper" size="40" autocomplete="off">
+      <input type="checkbox" class="setting" id="enable_fade" autocomplete="off">
+      <label for="enable_fade">Enable background fade-in (Avoids jarring image load)</label>
+      <br>
+      <input type="radio" id="radio_hexcolor" name="background" autocomplete="off">
+      <label for="radio_hexcolor">Color code (hex):</label>
+      <input type="text" class="setting" id="text_hexcolor" size="5" autocomplete="off" maxlength="6">
+    </div>
+    <hr>
+
+    <h2 id="search">Search</h2>
+    <div class="settings">
+      <input type="checkbox" class="setting" id="enable_search" autocomplete="off">
+      <label for="enable_search">Enable search bar</label>
+      <br>
+      <label for="search_engine">Search engine:</label>
+      <select class="setting" id="search_engine" autocomplete="off">
+        <option value="Google">Google</option>
+        <option value="DuckDuckGo">DuckDuckGo</option>
+        <option value="Bing">Bing</option>
+        <option value="Startpage">Startpage</option>
+      </select>
+    </div>
+    <hr>
+
+    <h2 id="bookmarks">Bookmarks</h2>
+    <div class="settings">
+      <button id="add_bookmark">Add bookmark</button><label> (Maximum of 20)</label>
+      <div id="bookmarks_ctnr"></div>
+    </div>
+    <hr>
+
+    <h2 id="weather">Weather</h2>
+    <div class="settings">
+      <input type="checkbox" class="setting" id="enable_weather" autocomplete="off">
+      <label for="enable_weather">Enable weather</label>
+      <br>
+      <label for="api_key">OpenWeatherMap API key:</label>
+      <input type="text" class="setting" id="api_key" size="26" autocomplete="off">
+      <a id="api_help" href="https://openweathermap.org/api" target="_blank">What's this?</a>
+      <br>
+      <label for="city">City:</label>
+      <input type="text" class="setting" id="city" size="20" autocomplete="off">
+      <br>
+      <label for="units">Units:</label>
+      <select class="setting" id="units" autocomplete="off">
+        <option value="imperial">Fahrenheit</option>
+        <option value="metric">Celcius</option>
+      </select>
+    </div>
+    <hr>
+
+    <h2 id="clock">Clock</h2>
+    <div class="settings">
+      <input type="checkbox" class="setting" id="enable_clock" autocomplete="off">
+      <label for="enable_clock">Enable clock (Refresh new tab to apply)</label>
+      <br>
+      <input type="checkbox" class="setting" id="enable_date" autocomplete="off">
+      <label for="enable_date">Enable date (Refresh new tab to apply)</label>
+      <br>
+      <label for="clock_12">Time format:</label>
+      <select class="setting" id="clock_12" autocomplete="off">
+        <option value="ampm">AM/PM</option>
+        <option value="24">24 hour</option>
+      </select>
+    </div>
+    <hr>
+
+    <h2 id="other">Other</h2>
+    <div class="settings">
+      <label for="favicon_color">Favicon:</label>
+      <select class="setting" id="favicon_color" autocomplete="off">
+        <option value="color">Colorful</option>
+        <option value="bw">Black & white</option>
+        <option value="none">None</option>
+      </select>
+      <br>
+      <input type="checkbox" class="setting" id="enable_settings" autocomplete="off">
+      <label for="enable_settings">Display settings icon (⚠️ Careful! If disabled, this page will only be accessible from within browser settings! ⚠️)</label>
+    </div>
+  </main>
+</body>
+<script src='res/js/options.js'></script>
+</html>

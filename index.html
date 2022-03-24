@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>New Tab</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link id="favicon" rel="icon">
+  <link rel='stylesheet' type='text/css' media='screen' href='res/css/main.css'>
+</head>
+<div id="fade"></div>
+<body>
+  <div id="weather-widget" style="display: none;">
+    <div class="weather_divs"><img id="weather-icon"></div>
+    <div id="weather_words" class="weather_divs">
+      <div id="temp"></div>
+      <div id="weather_desc"></div>
+    </div>
+  </div>
+  <img id="settings-icon" src="res/img/icons/gear.svg">
+  <div id="center">
+    <div id="clock"></div>
+    <div id="date"></div>
+    <div id="search_bar">
+      <div class="search_icon_bg" id="search_button">
+        <img id="search_icon" class="search_icons" src="res/img/icons/search.svg">
+      </div>
+      <input type="text" id="search_query" size="20" autocomplete="off">
+      <div class="search_icon_bg" id="x_button" style="display: none;">
+        <img id="x_icon" class="search_icons" src="res/img/icons/x.svg">
+      </div>
+    </div>
+    <div id="links">
+    </div>
+  </div>
+</body>
+<script type="application/javascript" src='res/js/main.js'></script>
+</html>

@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.ttf') format('truetype');
+}
+
+div#fade {
+    background: #2b2a33;
+    height: 100%;
+    width: 100%;
+    transition: opacity 1s;
+}
+
+div#fade.invisible {
+    opacity: 0;
+}
+
+html {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div#weather-widget {
+    position: absolute;
+    color: white;
+    padding: 1em;
+    top: .5em;
+    left: .5em;
+}
+
+div.weather_divs {
+    float: left;
+}
+
+div#weather_words {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+div#temp {
+    font-size: 48px;
+}
+
+div#weather_desc {
+    font-size: 24px;
+}
+
+img#weather-icon {
+    height: 100px;
+}
+
+img#settings-icon {
+    position: absolute;
+    width: 2.5em;
+    top: .5em;
+    right: .5em;
+    z-index: 2;
+    border-radius: 1.25em;
+}
+
+img#settings-icon:hover {
+    background-color: rgba(187, 187, 187, 0.5);
+}
+
+div#center {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div#clock {
+    color: white;
+    font-size: 64px;
+    text-shadow: 1px 1px 5px #000000;
+    height: 76px;
+}
+
+div#date {
+    color: white;
+    text-shadow: 1px 1px 5px #000000;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+div#search_bar {
+    display: flex;
+    box-sizing: border-box;
+    height: 44px;
+    width: 540px;
+    border-radius: 23px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.search_icons {
+    position: relative;
+    display: block;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.search_icon_bg {
+    display: block;
+    position: relative;
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+}
+
+.search_icon_bg:hover {
+    background-color: rgba(120,120,120,.5);
+}
+
+input#search_query {
+    position: relative;
+    color: white;
+    width: 440px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 16px;
+}
+
+input#search_query:focus {
+    outline: 0;
+}
+
+div#links {
+    box-sizing: border-box;
+    margin-top: 12px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#links.disabled {
+    display: none;
+}
+
+div#links a {
+    width: fit-content;
+    box-sizing: border-box;
+    background-color: rgba(82, 82, 82, 0.692);
+    padding: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: lightgray;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 4px;
+    border-radius: 16px;
+    text-shadow: 1px 1px 2px #1b1a1a;
+}
+
+div#links a:hover {
+    background-color: rgba(156, 156, 156, 0.5);
+}
+
+div.link_name {
+    display: inline-block;
+}
+
+img.link_favicon {
+    position: relative;
+    top: 2px;
+    left: -6px;
+}

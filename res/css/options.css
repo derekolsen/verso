@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: white;
+}
+
+body {
+    background: #454545;
+    margin: 0;
+}
+
+div#column {
+    box-sizing: border-box;
+    border-right: 1px solid #1b1b1b;
+    position: fixed;
+    background: #696969;
+    width: 200px;
+    height: 100%;
+}
+
+
+div#column > h3 {
+    text-align: center;
+}
+
+button#reset {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: white;
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+button#reset:hover {
+    background: #ff3232;
+}
+
+h3 > a {
+    color: white;
+}
+
+hr {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 > img {
+    position: relative;
+    top: 7px;
+    left: 8px;
+}
+
+main > h2 {
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+main {
+    position: absolute;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+main > div.settings {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+main > div.settings > a {
+    color: aqua;
+}
+
+.setting {
+    margin-bottom: 6px;
+}
+
+#bookmarks_ctnr {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    width: fit-content;
+}
+
+.bookmark {
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    padding: 4px;
+    background: #696969;
+    border: 1px solid #383838;
+}
+
+.bookmark label {
+    padding-top: 3px;
+}
+
+.bookmark input {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.bm_up {
+    background: white;
+    margin-right: 4px;
+    border-radius: 12px;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.bm_up:hover {
+    background: rgb(168, 168, 168);
+}
+
+.bm_down:hover {
+    background: rgb(168, 168, 168);
+}
+
+.bm_down {
+    background: white;
+    margin-right: 4px;
+    border-radius: 12px;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.bm_del {
+    border-radius: 12px;
+    background: #ff3232;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.bm_del:hover {
+    background: #b32020;
+}

@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Verso",
+    "description": "A replacement new-tab page with customizable bookmarks, wallpaper, weather information, and search.",
+    "version": "1.0",
+    "icons": {
+        "48": "res/img/icons/icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "chrome_settings_overrides": {
+        "homepage": "index.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{c69e594e-187f-48e6-90c4-eaebff9503dd}"
+        }
+    }
+}
